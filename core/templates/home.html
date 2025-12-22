@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+    <title>Home Page</title>
+</head>
+<body>
+    
+<header class="header-section container" id="home">
+      <div class="div-img">
+        <img src="{% static 'core/images/bose-logo.png' %}" alt="bose-logo" class="bose-logo" />
+        <button type="button" id="burgerBtn" class="burger-menu-button">
+          <a href="#menu">
+            &equiv;
+          </a>
+        </button>
+      </div>
+      <div>
+        <svg class="sound-svg">
+           <use href="{% static 'core/images/svgpic.svg' %}#icon-Sound-waves"></use>
+        </svg>
+        <h1 class="slogan">
+          The world shades.
+          <br />
+          Your music shines.
+        </h1>
+      </div>
+    </header>
+
+<div id="menu" class="menu">
+    <div class="div-img-2">
+        <button id="closeMenu" class="burger-menu-button">&times;</button>
+    </div>
+    <ul class="menu-ul">
+        <li><a href="#home" class="link-nav">Home</a></li>
+        <li><a href="#recommended" class="link-nav">Recommended</a></li>
+        <li><a href="#products" class="link-nav">Categories</a></li>
+        <li><a href="#benefits" class="link-nav">How to buy</a></li>
+    </ul>
+</div>
+
+</body>
+<script src="{% static 'core/js/modal.js' %}"></script>
+
+</html>
