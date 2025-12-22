@@ -1,0 +1,21 @@
+{% load static %}
+<header class="header-section container" id="home">
+      <div class="div-img">
+        <img src="{% static 'core/images/bose-logo.png' %}" alt="bose-logo" class="bose-logo" />
+        <button type="button" id="burgerBtn" class="burger-menu-button">
+          <a href="#menu">
+            &equiv;
+          </a>
+        </button>
+      </div>
+      <div>
+        <svg class="sound-svg">
+           <use href="{% static 'core/images/svgpic.svg' %}#icon-Sound-waves"></use>
+        </svg>
+        <h1 class="slogan">
+          The world shades.
+          <br />
+          Your music shines.
+        </h1>
+      </div>
+    </header>
