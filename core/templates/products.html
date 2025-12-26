@@ -1,0 +1,13 @@
+<section class="rec-section" id="recommended">
+    <h2 class="rec-h2">Recommended</h2>
+        <ul class="product-ul">
+            {% for product in products %}
+           <li class="product-li">
+                <img src="{{ product.avatar.url }}" alt="product-1" class="img-product" />
+                <h3 class="h3-rec">{{ product.name }}</h3>
+                <p class="p1-rec">{{ product.description }}</p>
+                <p class="p2-rec">{{ product.price}}</p>
+           </li>
+           {% endfor %}
+        </ul>
+</section>    
