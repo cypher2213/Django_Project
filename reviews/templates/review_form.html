@@ -1,0 +1,8 @@
+<section>
+    <h2>Leave your thoughts about us</h2>
+    <form method="post">
+            {% csrf_token %}
+            {{ review_form }}
+            <button type="submit">Submit</button>
+    </form> 
+</section>
