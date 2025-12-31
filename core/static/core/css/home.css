@@ -198,3 +198,78 @@
     margin: 0;
     flex-direction: row;
 }
+
+
+/* FORM */
+.form-section {
+  background-color:#292929;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.form-h2 {
+  text-align: center;
+  color:#e8eff9;
+}
+
+.rev-form {
+  color: #e8eff9;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rev-btn{
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: #e8eff9;
+  color: #292929;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.rev-btn:hover{
+  background-color: darkgray;
+  box-shadow: 0 0 10px 2px #e8eff9;
+}
+textarea {
+    resize: none;
+}
+
+.rev-form input,
+.rev-form textarea,
+.rev-form select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e8eff9;
+  background-color: #292929;
+  padding: 5px;
+  color: #e8eff9;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.rev-form input:hover,
+.rev-form textarea:hover,
+.rev-form select:hover {
+  border-color: #e8eff9;
+  background-color: #3a3a3a;
+  box-shadow: 0 0 10px 2px #e8eff9;
+}
+
+.rev-form input:focus,
+.rev-form textarea:focus,
+.rev-form select:focus {
+  border-color: #e8eff9;
+  background-color: #3a3a3a;
+  box-shadow: 0 0 10px 2px #e8eff9;
+  outline: none;
+}
