@@ -6,3 +6,6 @@ class CreateReview(forms.ModelForm):
     class Meta:
         model = models.Review
         fields = ['name','email','body','rating']
+        labels = {
+            'body':'Canvas for your imagination'
+        }

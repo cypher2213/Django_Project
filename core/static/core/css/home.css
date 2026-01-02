@@ -16,6 +16,44 @@
   justify-content: space-between;
   min-width: 320px;
 }
+
+
+
+
+/* Auth buttons */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.auth-btn {
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.username {
+  font-weight: 600;
+}
+
+
 .burger-menu {
   width: 24px;
   height: 24px;
@@ -279,4 +317,50 @@ textarea {
   background-color: #3a3a3a;
   box-shadow: 0 0 10px 2px #e8eff9;
   outline: none;
+}
+
+
+
+
+/* Register section */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.error {
+  color: #d00;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.rev-btn {
+  padding: 12px 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rev-btn:hover {
+  opacity: 0.9;
 }
