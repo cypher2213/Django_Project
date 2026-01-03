@@ -318,49 +318,64 @@ textarea {
   box-shadow: 0 0 10px 2px #e8eff9;
   outline: none;
 }
-
-
-
-
 /* Register section */
-.form-group {
+.auth-header-container{
   display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
+  justify-content: center;
+}
+.auth-header-container h1{
+  font-family:cursive;
 }
 
-.form-group label {
-  margin-bottom: 6px;
-  font-weight: 600;
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1em;
 }
 
-.form-group input {
+.form-register-div{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.register-form{
+  font-family: fantasy;
+}
+
+.reg-btn{
+  width: fit-content;
+  margin: 0 auto;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.form-group input:focus {
-  outline: none;
-  border-color: #000;
-}
-
-.error {
-  color: #d00;
-  font-size: 12px;
-  margin-top: 4px;
-}
-
-.rev-btn {
-  padding: 12px 20px;
-  background: #000;
-  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #292929;
+  color: #e8eff9;
+  border-radius: 10px;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family:fantasy;
+  display: flex;
+  align-items: center;
 }
 
-.rev-btn:hover {
-  opacity: 0.9;
+.reg-btn:hover{
+  background-color: darkgray;
+  box-shadow: 0 0 10px 2px #e8eff9;
+}
+
+ul.errorlist {
+    color: red;     
+    font-size: 0.9em;
+    margin: 5px 0 0 0;
+    padding: 0;
+    list-style: none; 
+}
+
+/* если есть общие ошибки формы */
+ul.errorlist.nonfield {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
