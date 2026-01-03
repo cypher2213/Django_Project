@@ -130,3 +130,9 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+
+AUTHENTICATION_BACKENDS = [
+    'core.backends.EmailBackend',  
+    'django.contrib.auth.backends.ModelBackend',  
+]

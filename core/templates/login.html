@@ -1,3 +1,24 @@
-<h1>
- Hello login
-</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+    <title>Login Page</title>
+</head>
+<body>
+    <section class="register-section">
+        <div class="auth-header-container">
+            <h1>Welcome, User. <br> Login now</h1>
+        </div>
+        <div class="form-register-div">
+        <form method="post" class="register-form">
+            {% csrf_token %}
+            {{ form }}
+            <button class="reg-btn" type="submit">Log-in</button>
+        </form>
+      </div>
+    </section>
+</body>
+</html>
