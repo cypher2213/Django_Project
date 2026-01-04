@@ -44,19 +44,33 @@
 
 .auth-btn {
   padding: 20px 40px;
-  background: #000;
-  color: #fff;
+  background: #292929;
+  color:#e8eff9;
   text-decoration: none;
   border-radius: 6px;
   font-size: 14px;
   width: 50px;
   text-align: center;
+  font-family: fantasy;
+  transition: all 0.3s ease;
+}
+.auth-btn:hover{
+  background:#e8eff9;;
+  color:#292929;
+  box-shadow: 0 0 10px 2px #292929;
 }
 
 .btn-outline {
   background: transparent;
-  border: 1px solid #000;
+  border: 1px solid #292929;
   color: #000;
+  transition: all 0.3s ease;
+  font-family: fantasy;
+}
+.btn-outline:hover{
+  background-color:#292929;
+  color:#e8eff9;
+  box-shadow: 0 0 10px 2px #292929;
 }
 
 .username {
@@ -389,4 +403,27 @@ ul.errorlist {
 ul.errorlist.nonfield {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.logout-form{
+  display: flex;
+  margin:0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.logout-btn{
+  padding: 20px 40px;
+  background-color: #e8eff9;
+  color:#292929;
+  border: 1px solid #292929;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family:fantasy;
+  font-size: 14px;
+}
+
+.logout-btn:hover{
+  background-color:#292929;
+  color:#e8eff9;
+  box-shadow: 0 0 10px 2px #292929;
 }

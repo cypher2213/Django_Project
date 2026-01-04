@@ -6,6 +6,12 @@
         <h1 class="welcome-user-h">
             Hello, {{ user.username }}! Happy to see you.
         </h1>
+        <form method="post" action="{% url 'logout' %}" class="logout-form">
+        {% csrf_token %}
+        <button type="submit" class="logout-btn">
+            Logout
+        </button>
+    </form>
     {% else %}
     <h1 class="welcome-user-h">You can login if you already have an account or create a new one</h1>
     <div class="auth-buttons">

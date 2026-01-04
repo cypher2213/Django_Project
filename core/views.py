@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from products.models import Product
 from reviews import forms
 from core.forms import CustomRegisterForm, CustomLoginForm
-from django.contrib.auth import login
+from django.contrib.auth import login,logout
 # Create your views here.
 
 def home(request):
@@ -41,3 +41,8 @@ def register(request):
         form = CustomRegisterForm()
         
     return render(request,'register.html', {"form":form})
+
+def logout_view(request):
+    logout(request)
+    return redirect('home')
+    
