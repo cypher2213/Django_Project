@@ -26,7 +26,12 @@ class CustomRegisterForm(UserCreationForm):
             "placeholder": "Enter password"
         })
     )
-    
+    def clean_email(self):
+        email = self.cleaned_data.get('email').lower()
+        if User.objects.filter(email__iexact=email).exists():
+            raise forms.ValidationError("User with this email already exists")
+        return email
+        
 
     class Meta:
         model = User
